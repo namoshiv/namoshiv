@@ -44,7 +44,7 @@ main {
 footer {
     background-color: var(--primary-color);
     color: whitesmoke;
-    padding: 40px;
+    padding: 40px 0;
     padding-bottom: 10px;
     text-align: center;
 
@@ -53,14 +53,14 @@ footer {
         margin: auto;
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
         flex-wrap: wrap;
 
         div {
             display: flex;
             flex-direction: column;
             width: 30%;
-            min-width: 300px;
+            min-width: 200px;
             gap: 10px;
             background-color: var(--secondary-color);
             padding: 40px;
@@ -78,6 +78,7 @@ footer {
                 gap: 15px;
                 font-size: large;
                 text-align: left;
+                overflow-wrap: anywhere;
 
                 >i {
                     color: var(--primary-color);
@@ -92,11 +93,11 @@ footer {
 }
 
 .quote-btn {
-    font-size: x-large;
+    font-size: large;
     color: whitesmoke;
     background-color: var(--secondary-color);
     width: fit-content;
-    padding: 20px;
+    padding: 16px;
     border-radius: 16px;
     text-decoration: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -131,17 +132,17 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 40px;
+        padding: 20px;
         min-height: 500px;
         max-width: var(--max-width);
         margin: auto;
 
         >span:first-child {
-            font-size: 52px;
+            font-size: 48px;
         }
 
         >span {
-            max-width: 450px;
+            max-width: 500px;
             font-size: x-large;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
         }
@@ -273,6 +274,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding: 50px 10px;
 
     >div:first-child {
         display: flex;
@@ -314,7 +316,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
-                width: 400px;
+                max-width: 400px;
                 gap: 15px;
 
                 >span:first-child {
