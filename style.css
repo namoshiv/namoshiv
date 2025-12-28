@@ -16,6 +16,10 @@ header {
     max-width: var(--max-width);
     margin: auto;
 
+    >span>img {
+        height: 70px;
+    }
+
     a {
         display: flex;
         gap: 10px;
@@ -24,6 +28,20 @@ header {
         font-size: x-large;
         color: var(--primary-color);
         text-decoration: none;
+    }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: 0;
+        color: #666666;
+
+        >span {
+            display: flex;
+            gap: 10px;
+            justify-content: right;
+        }
     }
 
     .selected {
@@ -67,7 +85,7 @@ footer {
             border-radius: 16px;
 
             >span:first-child {
-                font-size: x-large;
+                font-size: larger;
                 font-weight: bold;
                 margin: 0 auto;
                 margin-bottom: 10px;
@@ -87,8 +105,17 @@ footer {
         }
     }
 
-    >p:last-child {
-        margin-top: 40px;
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: large;
+        margin: 20px auto;
+
+        >a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
     }
 }
 
@@ -123,7 +150,7 @@ footer {
 
 .main-content {
 
-    background-image: url('img/truck-bg-dark_small.jpg');
+    background-image: url('img/truck-bg-dark_logo.jpg');
     background-size: cover;
     background-position: bottom;
     color: whitesmoke;
@@ -337,11 +364,44 @@ footer {
     }
 }
 
+.about-us {
+    background-color: var(--primary-color);
+    gap: 0;
 
-@media (max-width: 700px) {
+    >div {
+        border: 2px solid var(--secondary-color);
+        border-radius: 16px;
+        text-align: center;
+        font-size: large;
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        color: whitesmoke;
+
+
+        >.color-text {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+    }
+
+    >img {
+        display: block;
+        width: 300px;
+        border-radius: 24px;
+        margin: 50px auto -20px auto;
+    }
+}
+
+
+@media (max-width: 800px) {
     header {
         flex-direction: column;
         justify-content: center;
+
+        >div {
+            display: none;
+        }
     }
 
 
