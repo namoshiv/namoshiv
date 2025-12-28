@@ -367,6 +367,7 @@ footer {
 .about-us {
     background-color: var(--primary-color);
     gap: 0;
+    padding: 10px;
 
     >div {
         max-width: var(--max-width);
@@ -389,7 +390,7 @@ footer {
 
     >img {
         display: block;
-        width: 300px;
+        width: 250px;
         border-radius: 24px;
         margin: 50px auto -20px auto;
     }
