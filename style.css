@@ -367,7 +367,6 @@ footer {
 .about-us {
     background-color: var(--primary-color);
     gap: 0;
-    padding: 50px 10px 10px 10px;
 
     >div {
         max-width: var(--max-width);
@@ -406,7 +405,9 @@ footer {
             display: none;
         }
     }
-
+    .about-us {
+        padding: 10px;
+    }
 
 }
 
