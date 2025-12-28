@@ -369,6 +369,8 @@ footer {
     gap: 0;
 
     >div {
+        max-width: var(--max-width);
+        margin: auto;
         border: 2px solid var(--secondary-color);
         border-radius: 16px;
         text-align: center;
